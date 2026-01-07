@@ -7,35 +7,32 @@ typedef struct {
 } TaxInfo;
 
 int main() {
-    // Example state tax rates
+    // Define some sample state tax rates
     TaxInfo taxes[] = {
-        {"CA", 0.0825},
-        {"NY", 0.088},
-        {"TX", 0.0625},
-        {"FL", 0.06},
-        {"WA", 0.065}
+        {"CA", 0.075},  // California 7.5%
+        {"NY", 0.088},  // New York 8.8%
+        {"TX", 0.0625}, // Texas 6.25%
+        {"FL", 0.06},   // Florida 6%
+        {"WA", 0.065}   // Washington 6.5%
     };
     int numStates = sizeof(taxes)/sizeof(taxes[0]);
 
-    double original_price, sale_percent, price_with_tax;
-    double final_price;
+    double price, total;
     char state[30];
     double taxRate = 0;
 
-    // Input
-    printf("Enter state abbreviation (e.g., CA, NY): ");
+    printf("Enter the state abbreviation (e.g., CA, NY): ");
     scanf("%s", state);
-    printf("Enter original price of the item: ");
-    scanf("%lf", &original_price);
-    printf("Enter sale percentage (0 if none): ");
-    scanf("%lf", &sale_percent);
 
-    if (original_price < 0 || sale_percent < 0) {
-        printf("Price and sale percentage must be non-negative.\n");
+    printf("Enter the price of the item: ");
+    scanf("%lf", &price);
+
+    if (price < 0) {
+        printf("Price cannot be negative.\n");
         return 1;
     }
 
-    // Lookup tax rate
+    // Look up the tax rate automatically
     int found = 0;
     for (int i = 0; i < numStates; i++) {
         if (strcmp(state, taxes[i].state) == 0) {
@@ -44,22 +41,15 @@ int main() {
             break;
         }
     }
+
     if (!found) {
-        printf("State not found, using default tax rate 8%%.\n");
-        taxRate = 0.08;
+        printf("State not found! Using default tax rate of 7%%.\n");
+        taxRate = 0.07;
     }
 
-    // Apply tax
-    price_with_tax = original_price * (1 + taxRate);
+    total = price * (1 + taxRate);
 
-    // Apply sale
-    if (sale_percent != 0) {
-        final_price = price_with_tax * (1 - sale_percent/100.0);
-    } else {
-        final_price = price_with_tax;
-    }
-
-    printf("The final price of your item is: $%.2lf\n", final_price);
+    printf("Total price including %.2lf%% tax in %s: $%.2lf\n", taxRate*100, state, total);
 
     return 0;
 }
