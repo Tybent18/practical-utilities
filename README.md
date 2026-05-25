@@ -7,7 +7,7 @@ This repository began as a collection of lightweight utilities and has expanded 
 
 ---
 
-Overview
+## Overview
 
 This repository focuses on building understandable, maintainable software that demonstrates how core programming concepts can be applied to both everyday utilities and more advanced AI-inspired systems.
 
@@ -31,7 +31,7 @@ Human-inspired behavioral modeling
 
 ---
 
-Included Utilities
+## Included Utilities
 
 Financial Tools
 
@@ -46,7 +46,7 @@ Investment growth estimators
 Budgeting helpers
 
 
-Conversion Tools
+##Conversion Tools
 
 Currency conversion
 
@@ -57,7 +57,7 @@ Unit conversion utilities
 Measurement calculators
 
 
-Mathematical Utilities
+## Mathematical Utilities
 
 Equation solvers
 
@@ -68,7 +68,7 @@ Percentage calculations
 Numerical analysis tools
 
 
-String and Text Utilities
+## String and Text Utilities
 
 String manipulation
 
@@ -79,7 +79,7 @@ Formatting tools
 Pattern matching exercises
 
 
-Command-Line Applications
+## Command-Line Applications
 
 Interactive input-driven programs
 
@@ -93,7 +93,7 @@ User-focused utility software
 
 ---
 
-Artificial Intelligence Systems
+## Artificial Intelligence Systems
 
 The repository now includes experimental AI-inspired modules that simulate aspects of human perception and behavior.
 
@@ -102,11 +102,11 @@ These projects are intended for educational purposes, research exploration, and 
 
 ---
 
-Artificial Sensory Systems
+## Artificial Sensory Systems
 
 A framework for modeling six fundamental sensory channels within software.
 
-Vision
+## Vision
 
 Simulates visual perception by processing environmental data and identifying objects, movement, patterns, and spatial relationships.
 
@@ -121,7 +121,7 @@ Pattern analysis
 Environmental mapping
 
 
-Hearing
+## Hearing
 
 Processes auditory information and interprets sound-based inputs.
 
@@ -136,7 +136,7 @@ Speech detection
 Environmental awareness
 
 
-Touch
+## Touch
 
 Models physical interaction and contact-based feedback.
 
@@ -151,7 +151,7 @@ Contact monitoring
 Damage awareness
 
 
-Smell
+## Smell
 
 Represents environmental chemical sensing through abstract signal analysis.
 
@@ -166,7 +166,7 @@ Environmental classification
 Pattern recognition
 
 
-Taste
+## Taste
 
 Evaluates consumable or interactive inputs using rule-based assessment systems.
 
@@ -181,7 +181,7 @@ Preference modeling
 Input classification
 
 
-Spatial Awareness (Sixth Sense)
+## Spatial Awareness (Sixth Sense)
 
 Maintains an understanding of the surrounding environment beyond direct sensory input.
 
@@ -201,7 +201,7 @@ Situational awareness
 
 ---
 
-Artificial Emotion Engine
+## Artificial Emotion Engine
 
 A programmable emotional framework designed to simulate emotional state changes and behavioral responses.
 
@@ -211,11 +211,11 @@ Core Emotional States
 
 Examples include:
 
-Happiness
+Awe
 
-Sadness
+Grief
 
-Fear
+Boredom
 
 Anger
 
@@ -228,7 +228,7 @@ Trust
 Stress
 
 
-Emotional Features
+## Emotional Features
 
 Dynamic emotional state tracking
 
@@ -243,7 +243,7 @@ Behavioral weighting systems
 Long-term emotional development
 
 
-Applications
+## Applications
 
 Game AI
 
@@ -261,7 +261,7 @@ Human-computer interaction experiments
 
 ---
 
-Languages
+## Languages
 
 Current implementations may include:
 
@@ -277,7 +277,7 @@ Additional languages may be added as the repository grows.
 
 ---
 
-Design Philosophy
+## Design Philosophy
 
 Simplicity First
 
@@ -306,7 +306,7 @@ The repository encourages exploration of AI, perception systems, and behavioral 
 
 ---
 
-Repository Goals
+## Repository Goals
 
 Build useful programming utilities
 
@@ -324,7 +324,7 @@ Provide a foundation for future intelligent-agent research
 
 ---
 
-Future Development
+## Future Development
 
 Planned areas of exploration include:
 
