@@ -44,8 +44,10 @@ python artificial_emotion/curiosity.py
 python senses/vision.py
 gcc -Wall -Wextra -pedantic money_counter.c -o money_counter
 ./money_counter
-javac string_reversal.java
-java string_reversal
+mkdir -p /tmp/utility-demo
+cp string_reversal.java /tmp/utility-demo/Program.java
+javac /tmp/utility-demo/Program.java
+java -cp /tmp/utility-demo Program
 ```
 
 ## Suggested evolution
