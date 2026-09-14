@@ -1,351 +1,75 @@
-## Practical Programming Utilities
+# Practical Utilities & Cognitive Experiments
 
-A collection of practical programming projects, experiments, and intelligent system components designed to solve real-world problems through fundamental programming principles.
+A mixed programming laboratory containing everyday command-line utilities alongside early experiments in artificial perception and emotion modeling.
 
-This repository began as a collection of lightweight utilities and has expanded to include experimental work in artificial perception, sensory simulation, and emotion modeling.
+The repository is divided into three tracks so practical software and cognitive prototypes can evolve without pretending they are the same kind of project.
 
+## Project clusters
 
----
+### 1. Everyday utilities
 
-## Overview
+Small C and Java programs focused on input handling, calculations, validation, and string manipulation.
 
-This repository focuses on building understandable, maintainable software that demonstrates how core programming concepts can be applied to both everyday utilities and more advanced AI-inspired systems.
+| Area | Examples |
+| --- | --- |
+| Finance | [`interest_calculator.java`](interest_calculator.java), [`sale_price_calculator.c`](sale_price_calculator.c), [`tax_calculator.c`](tax_calculator.c) |
+| Money handling | [`money_counter.c`](money_counter.c) |
+| Text and validation | [`string_reversal.java`](string_reversal.java), [`codeword_checker.java`](codeword_checker.java) |
+| Low-level operations | [`bit.c`](bit.c) |
 
-Projects emphasize:
+### 2. Artificial sensory systems
 
-Input validation and user interaction
+The [`senses/`](senses/) directory separates perception-inspired modules into vision, hearing, touch, smell, taste, and spatial awareness (“sixth sense”).
 
-Clear problem decomposition
+These are educational abstractions for experimenting with signal interpretation and environmental state—not claims of human-equivalent perception.
 
-Readable, maintainable code
+### 3. Artificial emotion models
 
-Correctness over unnecessary complexity
+The [`artificial_emotion/`](artificial_emotion/) directory contains focused Python modules for curiosity, trust, confidence, stress, grief, boredom, empathy, fear, attachment, anticipation, jealousy, loneliness, frustration, and awe.
 
-Modular system design
+These modules model variables and behavioral weighting. They do not attempt to reproduce consciousness or clinical human emotion.
 
-Artificial perception and cognition research
+## Design principles
 
-Human-inspired behavioral modeling
+- readable logic before premature optimization;
+- minimal dependencies and portable examples;
+- explicit state and understandable behavior;
+- modular experiments that can later be composed;
+- honest separation between implemented behavior and future research ideas.
 
+## Run examples
 
+```bash
+python artificial_emotion/curiosity.py
+python senses/vision.py
+gcc -Wall -Wextra -pedantic money_counter.c -o money_counter
+./money_counter
+mkdir -p /tmp/utility-demo
+cp string_reversal.java /tmp/utility-demo/Program.java
+javac /tmp/utility-demo/Program.java
+java -cp /tmp/utility-demo Program
+```
 
----
+## Suggested evolution
 
-## Included Utilities
+The utility collection can remain here while mature cognitive work moves into focused repositories for adaptive memory, multisensory integration, decision policy, and human–AI interaction.
 
-Financial Tools
+That preserves this repository as the experimental nursery without forcing every sapling into the same flowerpot.
 
-Price calculators
+## Foundation portfolio
 
-Tax calculators
+This repository is part of a five-repository learning path:
 
-Interest calculators
+1. [Foundations & Algorithms](https://github.com/Tybent18/foundations-algorithms)
+2. [Data Structures Practice](https://github.com/Tybent18/data-structures-practice)
+3. [OOP Concepts](https://github.com/Tybent18/oop-concepts)
+4. [Math for Computing](https://github.com/Tybent18/math-for-computing)
+5. [Practical Utilities](https://github.com/Tybent18/practical-utilities)
 
-Investment growth estimators
+## Status
 
-Budgeting helpers
+Active exploratory collection. Everyday utilities are foundational exercises; sensory and emotion modules are early prototypes requiring formal interfaces, tests, and measured evaluation before research claims.
 
+## License
 
-##Conversion Tools
-
-Currency conversion
-
-Coin conversion
-
-Unit conversion utilities
-
-Measurement calculators
-
-
-## Mathematical Utilities
-
-Equation solvers
-
-Statistical helpers
-
-Percentage calculations
-
-Numerical analysis tools
-
-
-## String and Text Utilities
-
-String manipulation
-
-Text parsing
-
-Formatting tools
-
-Pattern matching exercises
-
-
-## Command-Line Applications
-
-Interactive input-driven programs
-
-Menu-based systems
-
-Validation-driven workflows
-
-User-focused utility software
-
-
-
----
-
-## Artificial Intelligence Systems
-
-The repository now includes experimental AI-inspired modules that simulate aspects of human perception and behavior.
-
-These projects are intended for educational purposes, research exploration, and cognitive system prototyping.
-
-
----
-
-## Artificial Sensory Systems
-
-A framework for modeling six fundamental sensory channels within software.
-
-## Vision
-
-Simulates visual perception by processing environmental data and identifying objects, movement, patterns, and spatial relationships.
-
-Potential features:
-
-Object recognition
-
-Motion detection
-
-Pattern analysis
-
-Environmental mapping
-
-
-## Hearing
-
-Processes auditory information and interprets sound-based inputs.
-
-Potential features:
-
-Sound recognition
-
-Frequency analysis
-
-Speech detection
-
-Environmental awareness
-
-
-## Touch
-
-Models physical interaction and contact-based feedback.
-
-Potential features:
-
-Pressure detection
-
-Surface interaction
-
-Contact monitoring
-
-Damage awareness
-
-
-## Smell
-
-Represents environmental chemical sensing through abstract signal analysis.
-
-Potential features:
-
-Hazard detection
-
-Resource identification
-
-Environmental classification
-
-Pattern recognition
-
-
-## Taste
-
-Evaluates consumable or interactive inputs using rule-based assessment systems.
-
-Potential features:
-
-Quality evaluation
-
-Composition analysis
-
-Preference modeling
-
-Input classification
-
-
-## Spatial Awareness (Sixth Sense)
-
-Maintains an understanding of the surrounding environment beyond direct sensory input.
-
-Potential features:
-
-Position tracking
-
-Environmental memory
-
-Threat prediction
-
-Navigation assistance
-
-Situational awareness
-
-
-
----
-
-## Artificial Emotion Engine
-
-A programmable emotional framework designed to simulate emotional state changes and behavioral responses.
-
-The system does not attempt to replicate human consciousness. Instead, it models emotional variables that influence decision-making and reactions.
-
-Core Emotional States
-
-Examples include:
-
-Awe
-
-Grief
-
-Boredom
-
-Anger
-
-Curiosity
-
-Confidence
-
-Trust
-
-Stress
-
-
-## Emotional Features
-
-Dynamic emotional state tracking
-
-Emotion-driven decision making
-
-Environmental response adaptation
-
-Memory-influenced reactions
-
-Behavioral weighting systems
-
-Long-term emotional development
-
-
-## Applications
-
-Game AI
-
-NPC behavior systems
-
-Simulation environments
-
-Educational AI projects
-
-Robotics research
-
-Human-computer interaction experiments
-
-
-
----
-
-## Languages
-
-Current implementations may include:
-
-C
-
-Java
-
-Python
-
-
-Additional languages may be added as the repository grows.
-
-
----
-
-## Design Philosophy
-
-Simplicity First
-
-Solutions should be understandable before they are optimized.
-
-Minimal Dependencies
-
-Keep projects lightweight and portable whenever possible.
-
-Explicit Logic
-
-Code should clearly communicate its purpose and behavior.
-
-Modularity
-
-Systems should be reusable, extensible, and easy to maintain.
-
-Educational Value
-
-Projects are designed to teach programming concepts through practical application.
-
-Experimentation
-
-The repository encourages exploration of AI, perception systems, and behavioral modeling while remaining grounded in fundamental programming principles.
-
-
----
-
-## Repository Goals
-
-Build useful programming utilities
-
-Demonstrate core computer science concepts
-
-Explore artificial sensory architectures
-
-Develop emotion-driven behavioral systems
-
-Create educational examples for programmers of all skill levels
-
-Provide a foundation for future intelligent-agent research
-
-
-
----
-
-## Future Development
-
-Planned areas of exploration include:
-
-Memory systems
-
-Learning algorithms
-
-Decision-making frameworks
-
-Environmental simulation
-
-Autonomous agents
-
-Multi-sensory integration
-
-Cognitive architecture research
-
-Human-AI interaction models
-
-
-
----
-
-"From simple calculators to experimental cognitive systems, every project in this repository is built with the same goal: turning fundamental programming concepts into practical, understandable software."
+[MIT](LICENSE)
