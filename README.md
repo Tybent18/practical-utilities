@@ -56,6 +56,13 @@ The utility collection can remain here while mature cognitive work moves into fo
 
 That preserves this repository as the experimental nursery without forcing every sapling into the same flowerpot.
 
+## Technical report
+
+- [Read: From Deterministic Utilities to Cognitive Prototypes](docs/utilities-to-cognitive-prototypes.md)
+- [Download the publication PDF](docs/utilities-to-cognitive-prototypes.pdf)
+
+The report maps claims to repository artifacts, defines an evidence-maturity model, documents limitations, and provides a reproducible development roadmap.
+
 ## Foundation portfolio
 
 This repository is part of a five-repository learning path:
